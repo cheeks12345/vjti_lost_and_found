@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "VJTI Lost & Found",
+    "slug": "vjti-lost-found",
+    "scheme": "vjtilostfound",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vjti.lostfound"
+    },
+    "android": {
+      "package": "com.vjti.lostfound",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow VJTI Lost & Found to choose a photo of the item.",
+          "cameraPermission": "Allow VJTI Lost & Found to take a photo of the item."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#8B1A1A"
+        }
+      ]
+    ]
+  }
+}
